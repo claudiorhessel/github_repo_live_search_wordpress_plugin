@@ -14,7 +14,7 @@
                 } else {
                     _e('Consultar Repositórios: ');
                 }
-                $inputSearch = '<input readonly style="width: 298px; height: 44px; font-size: 16px;" type="search" name="search" id="github-search-field" placeholder="PHP, JavaScript"><br /><br />';
+                $inputSearch = '<input style="width: 298px; height: 44px; font-size: 16px;" type="search" name="search" id="github-search-field" placeholder="PHP, JavaScript"><br /><br />';
             }
             echo "</label><br>";
             echo $inputSearch;

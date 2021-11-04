@@ -9,6 +9,7 @@ class GetData
     private const DEBUG = 0;
     private const LOGGING = 1;
     private const TRANSIENT_NAME = 'swper_github_repo_live_search_results';
+    private const GITHUB_PERSONAL_ACCESS_TOKEN = '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';
     
     public function apiCall(
         string $keyword,
@@ -51,7 +52,7 @@ class GetData
 
         try {
             $header = array( 'headers' => array(
-                "Authorization" => "token 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"
+                "Authorization" => "token " . self::GITHUB_PERSONAL_ACCESS_TOKEN
             ));
             $response = wp_safe_remote_get($requestUrl, $header);
 
@@ -115,7 +116,7 @@ class GetData
 
         try {
             $header = array( 'headers' => array(
-                "Authorization" => "token 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"
+                "Authorization" => "token " . self::GITHUB_PERSONAL_ACCESS_TOKEN
             ));
             $response = wp_safe_remote_get($requestUrl, $header);
 

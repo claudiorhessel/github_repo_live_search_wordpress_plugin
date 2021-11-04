@@ -1,6 +1,19 @@
 # github-repo-live-search
 Plugin Wordpress que implementa Live Search nos Repositórios do GitHub usando a API do GitHub, jQuery e Bootstrap
 
+# Importante
+Tive problemas para utilizar a API do GitHub, para resolver tive que criar uma chave privada e com ela fazer os testes, é provável que ela esteja inválida, então é imporante criar uma chave nova para fazer os testes e evitar o mesmo problema, o locar onde a chave deve ser inserida é no arquivo que fica no caminho abaixo:
+
+github-repo-live-search-master/inc/API/GetData.php
+
+Na linha 12
+
+private const GITHUB_PERSONAL_ACCESS_TOKEN = 'SUA CHAVE PRIVAD VEM AQUI';
+
+Para criar a chave pode utilizar a documentação abaixo:
+
+https://docs.github.com/pt/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+
 # Proposta
 1. página 1: Desenvolver uma página com input de texto de pesquisa(buscar repositórios enquanto digita), bem simples mesmo, estilo página do google com layout default do wordpress.
 2. página 2: Listar repositórios do próprio usuário (dono do repositório que foi selecionado na página 1).
